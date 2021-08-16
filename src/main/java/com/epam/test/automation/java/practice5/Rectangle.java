@@ -2,79 +2,53 @@ package com.epam.test.automation.java.practice5;
 
 public class Rectangle {
 
+    private double a;
+    private double b;
+
     public Rectangle(double a, double b) {
-        //TODO: Implement constructor with 'a' and 'b' parameters;
-        //TODO: set sideA and sideB to specified values;
+        this.a = a;
+        this.b = b;
     }
 
     public Rectangle(double a) {
-        //TODO: Implement constructor with 'a' parameter;
-        //TODO: set sideB to default value;
+        this.a = a;
+        this.b = 5;
     }
 
     public Rectangle() {
-        //TODO: Implement default constructor;
-        //TODO: set sideA and sideB to default values;
+        this.a = 4;
+        this.b = -3;
     }
 
-    /**
-     * <summary>
-     * Implement code according to description of task.
-     * </summary>
-     */
+
     public double getSideA() {
-        //TODO: Delete line below and write your own solution;
-        throw new UnsupportedOperationException();
+        return a;
     }
 
-    /**
-     * <summary>
-     * Implement code according to description of task.
-     * </summary>
-     */
     public double getSideB() {
-        //TODO: Delete line below and write your own solution;
-        throw new UnsupportedOperationException();
+        return b;
     }
 
-    /**
-     * <summary>
-     * Implement code according to description of task.
-     * </summary>
-     */
+
     public double area() {
-        //TODO: Delete line below and write your own solution;
-        throw new UnsupportedOperationException();
+        return a * b;
     }
 
-    /**
-     * <summary>
-     * Implement code according to description of task.
-     * </summary>
-     */
+
     public double perimeter() {
-        //TODO: Delete line below and write your own solution;
-        throw new UnsupportedOperationException();
+        return (2 * a) + (2 * b);
     }
 
-    /**
-     * <summary>
-     * Implement code according to description of task.
-     * </summary>
-     */
+
     public boolean isSquare() {
-        //TODO: Delete line below and write your own solution;
-        throw new UnsupportedOperationException();
+        return a == b;
     }
 
-    /**
-     * <summary>
-     * Implement code according to description of task.
-     * </summary>
-     */
+
     public void replaceSides() {
-        //TODO: Delete line below and write your own solution;
-        throw new UnsupportedOperationException();
+        var temp = this.a;
+        this.a = this.b;
+        this.b = temp;
     }
 
 }
