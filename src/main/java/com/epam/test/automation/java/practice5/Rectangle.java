@@ -22,11 +22,11 @@ public class Rectangle {
 
 
     public double getSideA() {
-        return a;
+        return Math.abs(a);
     }
 
     public double getSideB() {
-        return b;
+        return Math.abs(b);
     }
 
 
@@ -36,7 +36,7 @@ public class Rectangle {
 
 
     public double perimeter() {
-        return Math.abs((2 * a) + (2 * b));
+        return Math.abs((2 * a) + Math.abs(2 * b));
     }
 
 
@@ -46,8 +46,8 @@ public class Rectangle {
 
 
     public void replaceSides() {
-        var temp = this.a;
-        this.a = this.b;
+        var temp = Math.abs(this.a);
+        this.a = Math.abs(this.b);
         this.b = temp;
     }
 
