@@ -31,17 +31,17 @@ public class Rectangle {
 
 
     public double area() {
-        return a * b;
+        return Math.abs(a * b);
     }
 
 
     public double perimeter() {
-        return (2 * a) + (2 * b);
+        return Math.abs((2 * a) + (2 * b));
     }
 
 
     public boolean isSquare() {
-        return a == b;
+        return Math.abs(a) == Math.abs(b);
     }
 
 
